@@ -39,7 +39,7 @@ const Layout = ({
   return (
     <>
       <NextHeadSeo
-        title={titleOnlyTemplate ? title : `${title}-${APP_NAME}`}
+        title={titleOnlyTemplate ? title : `${title} - ${APP_NAME}`}
         canonical={pageUrl}
         description={description}
         robots={noindex ? "noindex nofollow" : undefined}
