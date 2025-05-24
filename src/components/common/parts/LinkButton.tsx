@@ -44,10 +44,12 @@ const LinkButton = (props: Props): React.ReactElement => {
   }
 
   return (
-    <Link href={linkUrl}>
-      <a {...anchorHTMLAttributes} className={`${BASE_CLASS} ${LINK_COLOR[variant]} ${className}`}>
-        {content}
-      </a>
+    <Link
+      href={linkUrl}
+      {...anchorHTMLAttributes}
+      className={`${BASE_CLASS} ${LINK_COLOR[variant]} ${className}`}
+    >
+      {content}
     </Link>
   );
 };

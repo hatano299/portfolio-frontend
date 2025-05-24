@@ -1,5 +1,4 @@
 import NextHeadSeo from "next-head-seo";
-
 import { APP_DEFAULT_DESCRIPTION, APP_NAME, APP_ROOT_URL } from "@/lib/data/metaData";
 import Header from "@/components/common/Header";
 
@@ -55,7 +54,7 @@ const Layout = ({
         }}
       />
       <div className="flex min-h-screen flex-col">
-        <Header title={title} />
+        <Header title={title}/>
         <main className="flex-1">{children}</main>
       </div>
     </>
