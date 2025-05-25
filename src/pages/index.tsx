@@ -11,11 +11,15 @@ const TopPage: NextPage = () => {
 
   return (
     <Layout path={ROUTES.WORKS} title="WORKS">
-      <Container maxWidth="max-w-4xl">
-        <div className="mt-8">
-          <WhoamiCard />
+      <Container maxWidth="max-w-7xl flex justify-center">
+        <div className="mt-8 columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4">
+          <div className="break-inside-avoid">
+            <WhoamiCard />
+          </div>
           {works.map((work) => (
-            <WorkCard key={work.id} work={work} />
+            <div key={work.id} className="mt-4 break-inside-avoid">
+              <WorkCard work={work} />
+            </div>
           ))}
         </div>
       </Container>

@@ -25,7 +25,7 @@ const LinkButton = (props: Props): React.ReactElement => {
           <Icon size={18} />
         </span>
       )}
-      <span>{label}</span>
+      <span className="text-card-body text-base">{label}</span>
     </>
   );
 
