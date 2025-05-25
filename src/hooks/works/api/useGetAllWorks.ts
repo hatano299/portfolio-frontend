@@ -10,8 +10,8 @@ export const useGetAllWorks = (): UseWorksGetAllWorksReturn => {
   const [works, setWorks] = useState<Work[]>([]);
   const [loading, setLoading] = useState(true);
 
-  const BASE_URL = "http://localhost:8080/api/works";
-  const API_URL = `${BASE_URL}`;
+  const BASE_URL = `${process.env.NEXT_PUBLIC_API_URL}`;
+  const API_URL = `${BASE_URL}/api/works`;
 
   const fetchWorks = async () => {
     try {
